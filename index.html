@@ -3,10 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard Odin Project</title>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="sidebarHeader">
+            <div id="logo"><img src="icons/view-dashboard.svg"></div>
+            <div id="title">Dashboard</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/home.svg"></div>
+                        <a href="#Home">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/card-account-details-outline.svg"></div>
+                        <a href="#Profile">Profile</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/message-reply.svg"></div>
+                        <a href="#Messages">Messages</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/clock-time-four.svg"></div>
+                        <a href="#History">History</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/note-multiple.svg"></div>
+                        <a href="#Tasks">Tasks</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/account-group.svg"></div>
+                        <a href="#Communities">Communities</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="menuSetting">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/cog.svg"></div>
+                        <a href="#Settings">Settings</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/help-box.svg"></div>
+                        <a href="#Support">Support</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon"><img src="icons/shield-check.svg"></div>
+                        <a href="#Privacy">Privacy</a>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+    </div>
+    <div class="header">
+        <div class="search">
+            <div class="icon searchIcon"><img src="icons/magnify.svg"></div>
+            <div class="input"><input type="text"></div>
+        </div>
+        <div class="info">
+            <div class="icon searchIcon"><img src="icons/bell-ring-outline.svg"></div>
+            <div class="profilePhoto"><img src="avatar1.png"></div>
+            <div class="profileName">Morgan Oakley</div>
+        </div>
+        <div class="name">
+            <div class="profilePhoto"><img src="avatar1.png"></div>
+            <div class="hi">
+                <p>Hi there,</p>
+                <div class="profileName">Morgan Oakley (@morgan)</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div><button class="btn">New</button></div>
+            <div><button class="btn">Upload</button></div>
+            <div><button class="btn">Share</button></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="projects">
+            <p>Your Projects</p>
+            <div class="allProjects">
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Super Cool Project</div>
+                        <div class="textText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A enim, blanditiis assumenda ut iste non!</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Less Cool Project</div>
+                        <div class="textText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas veritatis facere ut ipsa unde quo, temporibus amet vel enim tempore nihil? Vero, omnis. Eaque deleniti impedit explicabo repellat eligendi illo!</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Impossible</div>
+                        <div class="textText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, in!</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Easy Peasy App</div>
+                        <div class="textText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sapiente quibusdam fugiat quas enim ullam officia repellendus dicta exercitationem amet?</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Ad Blocker</div>
+                        <div class="textText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus velit iusto quidem nisi sequi, quaerat voluptatem rerum?</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="text">
+                        <div class="textTitle">Money Maker</div>
+                        <div class="textText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem asperiores incidunt molestias eveniet doloremque iste fugit, necessitatibus officiis, debitis quaerat harum quidem!</div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon"><img src="icons/star-remove-outline.svg"></div>
+                        <div class="icon"><img src="icons/eye-plus-outline.svg"></div>
+                        <div class="icon"><img src="icons/share-variant.svg"></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="rightSide">
+            <p>Announcements</p>
+            <div class="annoucements">
+                <div class="annoucement">
+                    <div class="titleAn">Site Maintance</div>
+                    <div class="textAn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit similique dicta asperiores.</div>
+                </div>
+                <div class="annoucement">
+                    <div class="titleAn">Community Share Day</div>
+                    <div class="textAn">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illo iure!</div>
+                </div>
+                <div class="annoucement">
+                    <div class="titleAn">Update Privacy Policy</div>
+                    <div class="textAn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus ducimus tempora expedita eaque itaque.</div>
+                </div>
+            </div>
+            <p>Trending</p>
+            <div class="trendings">
+                
+                <div class="trending">
+                    <div class="profilePhoto"><img src="avatar1.png"></div>
+                    <div class="nameTrend">
+                        <p>@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="profilePhoto"><img src="avatar2.png"></div>
+                    <div class="nameTrend">
+                        <p>@morgan</p>
+                        <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="profilePhoto"><img src="avatar3.png"></div>
+                    <div class="nameTrend">
+                        <p>@kendall</p>
+                        <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="profilePhoto"><img src="avatar4.png"></div>
+                    <div class="nameTrend">
+                        <p>@alex</p>
+                        <p>No traffic Maker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

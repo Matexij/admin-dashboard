@@ -1,0 +1,256 @@
+:root{
+    --blue: #1c93d2;
+    --ligher-blue: #46a2d4;
+    --background-blue: #e1e8f0;
+    --orange: #eeb526;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 120px 1fr;
+    font-family: Roboto, Helvetica, Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar{
+    background: var(--blue);
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 10px;
+    
+}
+.sidebar .sidebarHeader{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 10px;
+} 
+.sidebar #logo img{
+    width: 30px;
+    filter: invert(100%);
+    margin-right: 5px;
+}
+.sidebar ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar .icon img{
+    filter: invert(100%);
+    width: 15px
+}
+.menu ul, .menuSetting ul{
+    padding: 0px;
+}
+.menu ul li,.menuSetting ul li{
+    border-radius: 10px;
+}
+.menu ul li:hover,.menuSetting ul li:hover{
+    background: var(--ligher-blue);
+}
+.menu ul li .item,.menuSetting ul li .item{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menu ul li .item .icon, .menuSetting ul li .item .icon{
+    margin: 5px 10px;
+}
+
+.header{
+    background: white;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 0px 20px;
+}
+.header .buttons div{
+    display: inline;
+}
+.header .icon{
+    width: 15px
+}
+.header .search{
+    display: flex;
+    align-items: center;
+}
+.header .search div{
+    display: inline-block;
+    margin: 5px;
+}
+.header .search .input{
+    width: 100%;
+}
+.header .search .input input[type=text]{
+    background: var(--background-blue);
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    width: 80%;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 10px;
+}
+
+.header .info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.header .info div{
+    display: inline-block;
+    margin: 5px;
+}
+
+.header .profilePhoto img{
+    width:30px;
+}
+.header .name .profilePhoto img {
+    width: 50px;
+    margin-right: 10px
+}
+.header .name{    
+    display: flex;
+    align-items: center;
+}
+
+.header .name .hi p{
+    margin: 0px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.header .name .hi .profileName{
+    font-weight: bold;
+    font-size: 14px;
+}
+.header .buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .buttons .btn{
+    background: var(--blue);
+    border-radius: 20px;
+    width: 80px;
+    color: white;
+    border: none;
+    padding: 7px;
+    font-size: 12px;
+    margin: 0px clamp(2px, 7px, 20px);
+}
+.header .buttons .btn:hover{
+    background: var(--ligher-blue);
+}
+
+.main{
+    background: var(--background-blue);
+    grid-column: 2/3;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 200px;
+    gap: 20px;
+}
+.main .projects p, .main .rightSide > p {
+    font-weight: bold;
+    font-size: 14px;
+}
+.main .projects .allProjects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.main .projects .project{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px #bdbdbd;
+    border-left: 5px var(--orange) solid;
+    background: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main .projects .project .text .textTitle{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.main .projects .project .icons{
+   text-align: right;
+}
+.main .projects .project .icons .icon{
+    width: 15px;
+    display: inline-block;
+}
+.main .rightSide{
+    display: flex;
+    flex-direction: column;
+}
+.main .rightSide .annoucements{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px #bdbdbd;
+    background: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.main .rightSide .annoucements .annoucement{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+.main .rightSide .annoucements .annoucement:last-child{
+    border: 0;
+}
+.main .rightSide .annoucements .annoucement .titleAn{
+    font-weight: bold;
+}
+.main .rightSide .annoucements .annoucement .textAn{
+    font-size: 10px;
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+.main .rightSide .trendings{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px #bdbdbd;
+    background: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+.main .rightSide .trendings .trending div{
+    display: inline-block;
+    justify-self: start;
+    
+}
+.main .rightSide .trendings img{
+    width: 30px;
+    margin-right: 5px;
+}
+.main .rightSide .trendings .trending{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.main .rightSide .trendings .trending p{
+    margin: 0px;
+}
+.main .rightSide .trendings .trending p:first-child{
+    font-weight: bold;
+}
+.main .rightSide .trendings .trending .nameTrend{
+    
+}
